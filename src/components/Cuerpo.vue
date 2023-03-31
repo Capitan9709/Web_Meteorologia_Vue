@@ -37,8 +37,7 @@ function getLocation() {
 
 // muestra la posicion del usuario
 function showPosition(position) {
-    latitud = document.getElementById("latitud");
-    longitud = document.getElementById("longitud");
+
     latitud.innerHTML =  position.coords.latitude;
     longitud.innerHTML =  position.coords.longitude;
     
@@ -235,7 +234,7 @@ function trataRespuesta() {
             <div id="detallesTiempo" class="ms-5">
                 <h4><i class="fa-solid fa-water"></i> {{nivelMar}} metros sobre el nivel del mar</h4><br>
                 
-                <h4><i class='fa-solid fa-wind'></i> {{ viento }} Km/h | Direccion: {{ direccionViento }}</h4><br>
+                <h4><i class='fa-solid fa-wind'></i> {{ viento }} Km/h | Proviene del: {{ direccionViento }}</h4><br>
             </div>
         </div>
          
