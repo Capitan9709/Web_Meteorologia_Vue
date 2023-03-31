@@ -222,16 +222,16 @@ function trataRespuesta() {
 <template>
     <div id="contenedor" class="mx-3">
         <h2 hidden>Latitud: <span id="latitud"></span> Longitud: <span id="longitud"></span></h2><br>
-        <h2>Localización: {{ localizacion }}</h2><br>
+        <h2 class="text-center">Localización: {{ localizacion }}</h2><br>
         <h2>Datos En Tiempo Real:</h2><br>
-        <div id="Tiempo" class="d-flex">
-            <div id="datosTiempo" class="ms-5">
+        <div id="Tiempo" class="d-flex flex-column">
+            <div id="datosTiempo" class="mx-5">
                 <h4><i class="fa-solid fa-temperature-quarter"></i> {{ temperatura }} ºC</h4>
 
                 <img :src="imagen" :alt="imagenAlt"/>
                 <h4>{{ descripcion }}</h4>
             </div>
-            <div id="detallesTiempo" class="ms-5">
+            <div id="detallesTiempo" class="mx-5 mt-3 mb-3">
                 <h4><i class="fa-solid fa-water"></i> {{nivelMar}} metros sobre el nivel del mar</h4><br>
                 
                 <h4><i class='fa-solid fa-wind'></i> {{ viento }} Km/h | Proviene del: {{ direccionViento }}</h4><br>
